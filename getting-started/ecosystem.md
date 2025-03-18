@@ -159,7 +159,7 @@ The following list contains the known execution engines listed alphabetically.
     </td>
     <td>
     <center>
-      <input type="checkbox" disabled>
+      <input type="checkbox" checked disabled>
     </center>
     </td>
     <td>
