@@ -4,10 +4,10 @@ outline: deep
 
 # Variables
 
-Foundationally, WDL supports the creation and manipulation of variables in your
-computation graph. Each variable can have either a _primitive_ type or a _compound_
-types. Types may also be _optional_ meaning that they may or may not have a proper value
-(i.e., their value is `None`).
+WDL supports the creation and manipulation of variables within the computation
+graph. Each variable can have either a _primitive_ type or a _compound_ types.
+Types may also be _optional_ meaning that they may or may not have a proper
+value (i.e., their value is `None`).
 
 ### Declarations
 
