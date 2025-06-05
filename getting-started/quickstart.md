@@ -19,13 +19,14 @@ or the cloud).
 ### Workflows
 
 **Workflows** string together tasks via their inputs and outputs into a larger
-computation graph that can be executed. Workflows are arranged similarly to tasks
-except that (a) they don't have a `requirements` section and (b) they make available
-more control flow facilities that aren't relevant within a task context. For example,
-the workflow below uses both _conditional execution_ (the `if` statement) and a
-_scatter-gather_ (the `scatter` keyword and `messages` output). Notably, workflows can
-also define inputs and outputs, and these generally serve as the global inputs and
-outputs for the execution of a workflow.
+computation graph that can be executed. Workflows are arranged similarly to
+tasks except that (a) they don't have a `command` or `requirements` section and
+(b) they make available more control flow facilities that aren't relevant within
+a task context. For example, the workflow below uses both _conditional
+execution_ (the `if` statement) and a _scatter-gather_ (the `scatter` keyword
+and `messages` output). Notably, workflows can also define inputs and outputs,
+and these generally serve as the global inputs and outputs for the execution of
+a workflow.
 
 ### Inputs and Outputs
 
