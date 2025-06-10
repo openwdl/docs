@@ -117,7 +117,7 @@ the output of the above workflow would be the following.
     "Hello, world!",
     "Hallo, world!",
     "Hej, world!",
-    // "Ahoy, world!" is included is `is_pirate` is set to `true` above.
+    // "Ahoy, world!" is included if `is_pirate` is set to `true` above.
   ]
 }
 ```

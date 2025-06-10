@@ -64,7 +64,7 @@ ensure you have the best possible experience:
 
 * Follow the quickstart guide to learn the most important concepts in WDL
   ([link](./getting-started/quickstart.md)).
-* Install an developer extension within LSP integration, such as
+* Install a developer extension within LSP integration, such as
   [Sprocket][sprocket-ext], and pay attention to the validation errors and lints.
 * Select an execution engine for the environment(s) you're planning to run your
   workflows within and stick with it
