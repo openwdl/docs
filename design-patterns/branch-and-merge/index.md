@@ -55,8 +55,6 @@ task split_vcf {
   }
 
   command <<<
-    cp ~/Desktop/wdl/file.vcf.gz .
-
     picard SplitVcfs \
       I="~{vcf}" \
       SNP_OUTPUT="snp.vcf" \
