@@ -130,7 +130,7 @@ directly][spec-requirements-attributes] to ensure you know what can be specified
 
 ### Documentation and metadata
 
-Last, documentation and other metadata for your tasks is generally written in the `meta`
+Lastly, documentation and other metadata for your tasks is generally written in the `meta`
 ([spec link][spec-meta]) and `parameter_meta` ([spec link][spec-parameter-meta])
 sections.
 
