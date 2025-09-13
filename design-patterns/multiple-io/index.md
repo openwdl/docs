@@ -2,7 +2,7 @@
 
 Tasks don't only have to have a single input and output: they can produce accept
 **multiple inputs**, produce **multiple outputs**, and workflows can easily specify
-which inputs and outputs need to be connected together. For example, take the consider
+which inputs and outputs need to be connected together. For example, consider
 the following example.
 
 ![A diagram showing linear chaining of three tasks: `stepA`, `stepB`, and `stepC`. The

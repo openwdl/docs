@@ -1,7 +1,7 @@
 # Linear chaining
 
 The simplest way to chain tasks together in a workflow is a **linear chain**, whereby
-the outputs of one tasks feeds into the input of the next task. The diagram below show
+the outputs of one tasks feeds into the input of the next task. The diagram below shows
 the linear chaining of three tasks in a row.
 
 ![A diagram showing linear chaining of three tasks: `stepA`, `stepB`, and `stepC`. Each
