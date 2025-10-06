@@ -31,7 +31,7 @@ The following list contains the known execution engines listed alphabetically.
     </a>
     <br />
     Hosted Platform <br />
-    <i>Support WDL v1.1</i>
+    <i>Supports WDL v1.1</i>
     </td>
     <td>
     <center>
@@ -55,7 +55,7 @@ The following list contains the known execution engines listed alphabetically.
       </a>
       <br />
     Binary/Executable <br />
-    <i>Support WDL v1.0</i>
+    <i>Supports WDL v1.0</i>
     </td>
     <td>
     <center>
@@ -79,7 +79,7 @@ The following list contains the known execution engines listed alphabetically.
       </a>
       <br />
     Binary/Executable <br />
-    <i>Support WDL v1.1 and v2.0</i>
+    <i>Supports WDL v1.1 and v2.0</i>
     </td>
     <td>
     <center>
@@ -104,7 +104,7 @@ The following list contains the known execution engines listed alphabetically.
       </a>
       <br />
     Binary/Executable <br />
-    <i>Support WDL v1.1</i>
+    <i>Supports WDL v1.1</i>
     </td>
     <td>
     <center>
@@ -126,12 +126,39 @@ The following list contains the known execution engines listed alphabetically.
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/stjude-rust-labs/sprocket">
+        Sprocket
+      </a>
+      <br />
+    Binary/Executable <br />
+    <i>Supports WDL v1.2</i>
+    </td>
+    <td>
+    <center>
+      <input type="checkbox" checked disabled>
+    </center>
+    </td>
+    <td>
+      <input type="checkbox" disabled>
+        Slurm <br />
+      <input type="checkbox" checked disabled>
+        IBM LSF
+    </td>
+    <td>
+      <input type="checkbox" checked disabled> Amazon AWS*<br />
+      <input type="checkbox" checked disabled> Microsoft Azure*<br />
+      <input type="checkbox" checked disabled> Google Cloud*<br /><br />
+      <i>* via TES</i>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://terra.bio/">
         Terra
       </a>
       <br />
     Hosted Platform <br />
-    <i>Support WDL v1.0</i>
+    <i>Supports WDL v1.0</i>
     </td>
     <td>
     <center>
@@ -148,14 +175,14 @@ The following list contains the known execution engines listed alphabetically.
       <input type="checkbox" checked disabled> Google Cloud
     </td>
   </tr>
-   <tr>
+  <tr>
     <td>
       <a href="https://toil.ucsc-cgl.org">
         Toil
       </a>
       <br />
     Binary/Executable <br />
-    <i>Support WDL v1.1</i>
+    <i>Supports WDL v1.1</i>
     </td>
     <td>
     <center>
@@ -175,7 +202,7 @@ The following list contains the known execution engines listed alphabetically.
 </table>
 
 
-## IDE Support
+## IDESupports 
 
 Extensions and other IDE support tools listed sorted by the editor.
 
