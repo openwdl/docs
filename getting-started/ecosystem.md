@@ -202,7 +202,7 @@ The following list contains the known execution engines listed alphabetically.
 </table>
 
 
-## IDESupports 
+## IDE Support
 
 Extensions and other IDE support tools listed sorted by the editor.
 
