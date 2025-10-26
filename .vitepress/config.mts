@@ -152,6 +152,18 @@ export default defineConfig({
                 text: "String Array functions",
                 link: "/reference/stdlib/string-array",
               },
+              {
+                text: "Array functions",
+                link: "/reference/stdlib/array",
+              },
+              {
+                text: "Map functions",
+                link: "/reference/stdlib/map",
+              },
+              {
+                text: "Other functions",
+                link: "/reference/stdlib/other",
+              },
             ],
             collapsed: true,
           },
