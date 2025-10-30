@@ -227,6 +227,7 @@ the category.
 | [wdl-tests]       | Conformance testing      | Conformance tests for WDL execution engines.              |
 | [wdl-aid]         | Documentation generation | _"Automatic input generation for WDL worflows."_          |
 | [pytest-workflow] | Testing                  | Testing framework for workflow languages (including WDL). |
+| [wdl-atlas]       | Documentation generation | Generate interactive HTML and workflow diagrams.          |
 | [wdldoc]          | Documentation generation | _"Create WDL documentation using Markdown."_              |
 | [wdl-packager]    | Package management       | _"Package a WDL and imports into a zip file."_            |
 | [pytest-wdl]      | Testing                  | _"WDL plugin for pytest."_                                |
@@ -234,7 +235,7 @@ the category.
 ## Community Workflows
 
 The following is an incomplete list of large WDL workflow repositories sorted by name.
-
+W
 | Name                                                            |  Description                                                                                                                                                                                                 |
 | :-------------------------------------------------------------- |  :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [BioWDL] <br /> _LUMC_                                          |  _"Bioinformatics workflows and tasks, written in WDL."_ BioWDL is a large GitHub organization that contains the WDL workflows developed at LUMC ([link](https://lumc.nl)).                                  |
@@ -269,6 +270,7 @@ The following is an incomplete list of large WDL workflow repositories sorted by
 [Thiagen]: https://github.com/theiagen/public_health_bioinformatics
 [WARP]: https://broadinstitute.github.io/warp/docs/get-started/
 [wdl-aid]: https://github.com/biowdl/wdl-aid
+[wdl-atlas]: https://github.com/lmtani/wdl-atlas
 [wdl-mode]: https://github.com/zhanxw/wdl-mode
 [wdl-packager]: https://github.com/biowdl/wdl-packager
 [wdl-sublime]: https://github.com/broadinstitutewdl-sublime/
