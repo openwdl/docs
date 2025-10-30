@@ -235,7 +235,7 @@ the category.
 ## Community Workflows
 
 The following is an incomplete list of large WDL workflow repositories sorted by name.
-W
+
 | Name                                                            |  Description                                                                                                                                                                                                 |
 | :-------------------------------------------------------------- |  :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [BioWDL] <br /> _LUMC_                                          |  _"Bioinformatics workflows and tasks, written in WDL."_ BioWDL is a large GitHub organization that contains the WDL workflows developed at LUMC ([link](https://lumc.nl)).                                  |
