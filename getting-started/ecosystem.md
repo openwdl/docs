@@ -139,7 +139,7 @@ The following list contains the known execution engines listed alphabetically.
     </center>
     </td>
     <td>
-      <input type="checkbox" disabled>
+      <input type="checkbox" checked disabled>
         Slurm <br />
       <input type="checkbox" checked disabled>
         IBM LSF
