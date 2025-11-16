@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Workflow Description Language"
+  name: "Workflow Description Language Docs"
   tagline: Guides and reference materials for the Workflow Description Language (WDL).
   image: "hero.svg"
   actions:
