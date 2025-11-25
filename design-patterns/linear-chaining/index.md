@@ -66,7 +66,7 @@ task calculate_circle_area {
   }
 
   command <<<
-    bc -l <<< "2 * ~{pi} * ~{radius}"
+    bc -l <<< "~{pi} * ~{radius} ^ 2"
   >>>
 
   output {
