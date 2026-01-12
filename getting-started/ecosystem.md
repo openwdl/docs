@@ -247,7 +247,7 @@ The following is an incomplete list of large WDL workflow repositories sorted by
 | [St. Jude Cloud] <br /> _St. Jude Children's Research Hospital_ | Official repository for data processing pipelines used on St. Jude Cloud ([link](https://platform.stjude.cloud)).                                                                                           |
 | [Thiagen] <br /> _Theiagen Genomics_                            | Official repository of Thiagen's WDL workflows.                                                                                                                                                             |
 | [WARP] <br /> _Broad Institute_                                 | WARP stands for "WDL Research Analysis Pipelines" and contains cloud-optimized pipelines for processing biological data from the Broad Institute Data Sciences Platform.                                    |
-| [WILDS WDL Library] <br /> _Fred Hutch Cancer Center_ | A centralized collection of reusable WDL modules and pipelines for genomics research, featuring tested components for tools like STAR, BWA, GATK, and more. |
+| [WILDS WDL Library] <br /> _Fred Hutch Cancer Center_ | A centralized collection of reusable WDL modules and pipelines for bioinformatics research, featuring tested components for tools like STAR, BWA, GATK, and more. See [documentation](https://getwilds.org/wilds-wdl-library/) for guides and usage examples. |
 
 [create a pull request]: https://github.com/openwdl/docs/pulls
 [BioWDL]: https://github.com/biowdl
