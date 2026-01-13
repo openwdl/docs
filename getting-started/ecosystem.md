@@ -247,7 +247,7 @@ The following is an incomplete list of large WDL workflow repositories sorted by
 | [St. Jude Cloud] <br /> _St. Jude Children's Research Hospital_ | Official repository for data processing pipelines used on St. Jude Cloud ([link](https://platform.stjude.cloud)).                                                                                           |
 | [Thiagen] <br /> _Theiagen Genomics_                            | Official repository of Thiagen's WDL workflows.                                                                                                                                                             |
 | [WARP] <br /> _Broad Institute_                                 | WARP stands for "WDL Research Analysis Pipelines" and contains cloud-optimized pipelines for processing biological data from the Broad Institute Data Sciences Platform.                                    |
-| [WILDS] <br /> _Fred Hutch_                                     | Official repositories of the Workflows for Integration of Large Data and Software (WILDS) developed at the Fred Hutch Data Science Lab.                                                                     |
+| [WILDS WDL Library] <br /> _Fred Hutch Cancer Center_ | A centralized collection of reusable WDL modules and pipelines for bioinformatics research, featuring tested components for tools like STAR, BWA, GATK, and more. See [documentation](https://getwilds.org/wilds-wdl-library/) for guides and usage examples. |
 
 [create a pull request]: https://github.com/openwdl/docs/pulls
 [BioWDL]: https://github.com/biowdl
@@ -277,5 +277,5 @@ The following is an incomplete list of large WDL workflow repositories sorted by
 [wdl-tests]: https://github.com/openwdl/wdl-tests
 [wdl-vim]: https://github.com/broadinstitute/vim-wdl
 [wdldoc]: https://github.com/stjudecloud/wdldoc
-[WILDS]: https://github.com/orgs/getwilds/repositories?q=lang%3Awdl&type=all
+[WILDS WDL Library]: https://github.com/getwilds/wilds-wdl-library
 [Winstanly WDL]: https://plugins.jetbrains.com/plugin/8154-winstanley-wdl
