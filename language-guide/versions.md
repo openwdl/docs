@@ -1,4 +1,4 @@
-# Verisons
+# Versions
 
 The Workflow Description Language has two concepts of versions within the project:
 
@@ -39,16 +39,17 @@ defaults to a very early version of the WDL specification (`draft-2`).
 You can specify the version of your WDL document like so:
 
 ```wdl
-version 1.2
+version 1.3
 
 # ... other document contents ...
 ```
 
-## Compatability considerations
+## Compatibility considerations
 
-Documents may only import other WDL documents of the same version. This is
-because the imported documents are effectively comingled within their importer's
-context and processed holistically (instead of, for example, being compiled
-independently).
+Documents may import other WDL documents with the same major version and a minor
+version less than or equal to their own (e.g., a v1.3 document can import v1.2
+or v1.1 documents). This is because the imported documents are effectively
+comingled within their importer's context and processed holistically (instead
+of, for example, being compiled independently).
 
 [Upgrade guide]: ../reference/upgrade-guide.md

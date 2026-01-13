@@ -49,7 +49,7 @@ containing only single nucleotide variants and (b) a VCF containing only
 insertions/deletions, followed by merging them back together.
 
 ```wdl
-version 1.2
+version 1.3
 
 # (1) We write a task to split the VCF into multiple VCFs.
 task split_vcf {

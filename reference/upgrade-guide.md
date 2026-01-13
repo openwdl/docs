@@ -22,6 +22,136 @@ they are often helpful in quickly scanning upgrade elements to see which might
 apply to your situation.
 :::
 
+# WDL v1.3
+
+WDL v1.3 introduces enumeration types, `else if`/`else` conditional clauses, new
+standard library functions, and enhanced retry capabilities for tasks. All
+changes are backwards compatible with previous `v1.x` releases. The full release
+notes can be found [here][wdl-v1.3-release-notes].
+
+### Checklist
+
+Use this checklist to ensure you hit all of the sections.
+
+#### Moderate impact changes
+
+<input type="checkbox" /> New enumeration types ([link](#new-enumeration-types)).<br />
+<input type="checkbox" /> New `else if` and `else` conditional clauses ([link](#new-else-if-and-else-conditional-clauses)).<br />
+<input type="checkbox" /> New `split` standard library function ([link](#new-split-standard-library-function)).<br />
+<input type="checkbox" /> Clarified path existence requirements ([link](#clarified-path-existence-requirements)).<br />
+
+#### Low impact changes
+
+<input type="checkbox" /> New `task.previous` variable ([link](#new-taskprevious-variable)).<br />
+<input type="checkbox" /> New `task.max_retries` variable ([link](#new-taskmax_retries-variable)).<br />
+
+## Moderate impact changes
+
+### New enumeration types
+
+Enumeration types (`enum`) were introduced in
+[#695](https://github.com/openwdl/wdl/pull/695) to define closed sets of named
+variants with associated values. Enums support explicit and implicit typing, and
+variant values can be of any WDL type including primitives, compound types, and
+user-defined types. A new `value()` standard library function was also added to
+extract the inner value from an enum variant.
+
+```wdl
+version 1.3
+
+enum PrimaryColor {
+  Red = "#FF0000"
+  Green = "#00FF00"
+  Blue = "#0000FF"
+}
+
+workflow example {
+  PrimaryColor color = PrimaryColor.Red
+  String hex_code = value(color)  # "#FF0000"
+}
+```
+
+Look for anything that has a closed set of choices—these are good candidates to
+replace with enumerations.
+
+### New `else if` and `else` conditional clauses
+
+The `else if` and `else` clauses were introduced in
+[#699](https://github.com/openwdl/wdl/pull/699) to provide more expressive
+conditional logic within workflows. Previously, to achieve an `else`, you had to
+write two `if` statements with negated conditions.
+
+```wdl
+version 1.3
+
+workflow example {
+  input {
+    String mode
+  }
+
+  if (mode == "fast") {
+    call fast_analysis
+  } else if (mode == "thorough") {
+    call thorough_analysis
+  } else {
+    call default_analysis
+  }
+}
+```
+
+Look for pairs of `if` statements where the second condition is the negation of
+the first—these can be simplified using `else`.
+
+### New `split` standard library function
+
+The `split` function was introduced in
+[#729](https://github.com/openwdl/wdl/pull/729) to split a string into an array
+of substrings based on a delimiter pattern.
+
+```wdl
+Array[String] parts = split("a,b,c", ",")  # ["a", "b", "c"]
+```
+
+Look for command blocks using `awk`, `cut`, or `tr` to split strings—these can
+be replaced with the native `split` function.
+
+### Clarified path existence requirements
+
+The behavior of relative paths in `File` and `Directory` declarations was
+clarified in [#735](https://github.com/openwdl/wdl/pull/735). Relative paths are
+resolved relative to the WDL document's parent directory outside the `output`
+section, and relative to the task's execution directory inside the `output`
+section. Additionally, `File` and `Directory` values must exist at declaration
+evaluation time—if a path does not exist when the declaration is evaluated, a
+runtime error will occur. Optional files evaluate to `None` if the path does not
+exist.
+
+Review any `File` or `Directory` declarations that reference paths which might
+not exist yet—these should either exist before the workflow runs, be marked as
+optional (`File?` or `Directory?`), or be declared in the `output` section. Also
+ensure that relative paths are updated to be relative to the correct location.
+
+## Low impact changes
+
+### New `task.previous` variable
+
+The `task.previous` variable was added in
+[#734](https://github.com/openwdl/wdl/pull/734), enabling runtime access to the
+previous attempt's computed requirements. This is useful for implementing retry
+logic that adjusts resources based on previous failures.
+
+If you have tasks that sometimes fail due to insufficient memory or CPU,
+consider using `task.previous` to automatically scale up resources on retry.
+
+### New `task.max_retries` variable
+
+The `task.max_retries` variable was added in
+[#733](https://github.com/openwdl/wdl/pull/733) to provide access to the maximum
+number of retry attempts configured for a task.
+
+If you have retry logic that needs different behavior on the final attempt, you
+can now use `task.max_retries` to detect when you're on the last retry.
+
 # WDL v1.2
 
 WDL v1.2 introduces a great deal of new syntax and changes to the specification.
@@ -160,5 +290,6 @@ and use them where appropriate.
 Versions of WDL prior to the ones outlined in this guide did not exist at the
 time the upgrade guide was created. As such, they are not included in the guide.
 
+[wdl-v1.3-release-notes]: https://github.com/openwdl/wdl/releases/tag/v1.3.0
 [wdl-v1.2-release-notes]: https://github.com/openwdl/wdl/releases/tag/v1.2.0
 [Versioning section]: ../language-guide/versions.md

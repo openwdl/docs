@@ -42,7 +42,7 @@ from: be sure to check them out!
   repository.
 - Last, the [WDL specification] exhaustively documents the WDL standard.
 
-[contributing-md]: https://github.com/openwdl/wdl/blob/wdl-1.2/CONTRIBUTING.md
+[contributing-md]: https://github.com/openwdl/wdl/blob/wdl-1.3/CONTRIBUTING.md
 [Learn WDL guide]: https://github.com/openwdl/learn-wdl
 [official WDL documentation]: https://github.com/openwdl/docs
 [official WDL template repository]: https://github.com/openwdl/workflow-template-wdl

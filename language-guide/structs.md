@@ -53,4 +53,4 @@ workflow run {
 To conclude, structs are an idiomatic mechanism for packaging up complex pieces of data
 that need to be passed around as a unit: we highly recommend you use them when you can.
 
-[spec-structs]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#custom-types-structs
+[spec-structs]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#custom-types-structs

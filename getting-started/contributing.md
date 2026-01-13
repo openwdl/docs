@@ -24,7 +24,7 @@ is incredibly helpful!
 [documentation]: https://github.com/openwdl/docs/
 [OpenWDL organization]: https://github.com/openwdl/
 [pull requests]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
-[RFC process]: https://github.com/openwdl/wdl/blob/wdl-1.2/RFC.md
+[RFC process]: https://github.com/openwdl/wdl/blob/wdl-1.3/RFC.md
 [slack-invite]: https://join.slack.com/t/openwdl/shared_invite/zt-ctmj4mhf-cFBNxIiZYs6SY9HgM9UAVw
 [specification]: https://github.com/openwdl/wdl/
-[contributing-md]: https://github.com/openwdl/wdl/blob/wdl-1.2/CONTRIBUTING.md
+[contributing-md]: https://github.com/openwdl/wdl/blob/wdl-1.3/CONTRIBUTING.md

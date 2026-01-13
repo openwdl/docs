@@ -46,7 +46,7 @@ and indels separately. This introduces a branch in our computation graph where t
 filtering steps can be run concurrently and merged back together after completion.
 
 ```wdl
-version 1.2
+version 1.3
 
 # (1) We write a task to split the VCF into multiple VCFs.
 task split_vcf {

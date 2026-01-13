@@ -41,7 +41,7 @@ For a more complete picture, here is a workflow that actually computes π by get
 constant from Python.
 
 ```wdl
-version 1.2
+version 1.3
 
 # (1) We write a task to calculate π.
 task calculate_pi {

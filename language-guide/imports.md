@@ -9,7 +9,8 @@ The most important bits to understand are:
 
 * Imports get their own namespace within WDL files,
 * Imports can be local files or URLs (technically, arbitrary URIs),
-* Imported documents **must** be the same version as the current document, and
+* Imported documents must have the same major version and a minor version less than or
+  equal to the current document (e.g., a v1.3 document can import v1.2 or v1.1), and
 * You may alias imports or their constituent parts to avoid name collisions.
 
 The example below shows some representative imports with brief descriptions of each.
@@ -30,4 +31,4 @@ import "http://example.com/lib/stdlib.wdl"
 ```
 
 [spec-import-statements]:
-    https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#import-statements
+    https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#import-statements

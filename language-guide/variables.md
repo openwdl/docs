@@ -88,13 +88,13 @@ types:
   link][spec-maps]). Though valid WDL today, `Object`s are deprecated and are not
   suggested for future use.
 
-[`defined`]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#select_first
-[`select_first`]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#select_first
-[spec-arrays]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#arrayx
-[spec-objects]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#-object 
-[spec-maps]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#mapp-y
-[spec-pairs]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#pairx-y
-[spec-declarations]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#declarations
-[spec-optional-types]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#optional-types-and-none
-[spec-primitive-types]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#primitive-types
-[spec-strings]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#strings
+[`defined`]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#select_first
+[`select_first`]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#select_first
+[spec-arrays]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#arrayx
+[spec-objects]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#-object 
+[spec-maps]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#mapp-y
+[spec-pairs]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#pairx-y
+[spec-declarations]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#declarations
+[spec-optional-types]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#optional-types-and-none
+[spec-primitive-types]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#primitive-types
+[spec-strings]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#strings

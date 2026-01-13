@@ -46,7 +46,7 @@ straightforward manner by (a) constructing the atomic computation you'd like to 
 using a `task` and (b) running that task for each of your greetings using a `workflow`.
 
 ```wdl
-version 1.2
+version 1.3
 
 task say_hello {
     input {

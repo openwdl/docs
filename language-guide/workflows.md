@@ -19,7 +19,7 @@ cover these again in this section of the guide. If you need a refresher, we reco
 you read the relevant sections in the [Tasks](tasks.md) section.
 
 [spec-workflows]:
-    https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#workflow-definition
+    https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#workflow-definition
 
 ### The `call` statement
 
@@ -122,36 +122,27 @@ workflow run {
     Boolean alternate_execution_mode
   }
 
-    # Based on the value passed in as an input, either...
-    if (alternate_execution_mode) {
-        # the alternate execution mode will run, or...
-        call stepA_alternate {
-        }
-    }
+  # Based on the value passed in as an input, either the alternate
+  # execution mode will run, or the standard execution mode will run.
+  if (alternate_execution_mode) {
+    call stepA_alternate {}
+  } else {
+    call stepA {}
+  }
 
-    if (!alternate_execution_mode) {
-        # the standard execution mode will run...
-        call stepA {
-        }
-    }
+  # Using `select_first`, we can pick up an output named `qc_passed`
+  # in either `stepA` or `stepA_alternate` (whichever ran) and then
+  # conditionally run `stepB` based on that result.
+  if (select_first([
+    stepA.qc_passed,
+    stepA_alternate.qc_passed,
+  ])) {
+    call stepB {}
+  }
 
-    # Using `select_first`, we can pick up an output named `qc_passed`
-    # in either `stepA` or `stepA_alternate` (whichever ran) and then
-    # conditionally run `stepB` based on that result.
-    if (select_first([
-        stepA.qc_passed,
-        stepA_alternate.qc_passed,
-    ])) {
-        call stepB {}
-    }
-
-    # ...
+  # ...
 }
 ```
-
-Note that the above example uses two `if` statements because WDL doesn't yet support
-`else` statements. Instead, one can achieve the same effect with two if
-statements and a negated conditional on the second statement.
 
 ### Design patterns
 
@@ -163,8 +154,8 @@ idiomatic approaches to construct workflows
 ([link](../design-patterns/linear-chaining/)). We highly recommend you read that section
 to take full advantages of the facilities WDL provides. 
 
-[spec-call]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#call-statement
+[spec-call]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#call-statement
 [spec-element-evaluation]:
-    https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#evaluation-of-workflow-elements
+    https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#evaluation-of-workflow-elements
 [spec-conditional]:
-    https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#conditional-statement
+    https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#conditional-statement

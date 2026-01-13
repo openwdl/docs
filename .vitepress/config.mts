@@ -56,7 +56,7 @@ export default defineConfig({
     nav: [
       {
         text: "Specification",
-        link: "https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md",
+        link: "https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md",
       },
     ],
 
@@ -91,6 +91,7 @@ export default defineConfig({
         items: [
           { text: "Variables", link: "/language-guide/variables.md" },
           { text: "Structs", link: "/language-guide/structs.md" },
+          { text: "Enumerations", link: "/language-guide/enumerations.md" },
           { text: "Tasks", link: "/language-guide/tasks.md" },
           { text: "Workflows", link: "/language-guide/workflows.md" },
           { text: "Imports", link: "/language-guide/imports.md" },
@@ -159,6 +160,10 @@ export default defineConfig({
               {
                 text: "Map functions",
                 link: "/reference/stdlib/map",
+              },
+              {
+                text: "Enum functions",
+                link: "/reference/stdlib/enum",
               },
               {
                 text: "Other functions",

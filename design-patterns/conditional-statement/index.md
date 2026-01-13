@@ -51,3 +51,26 @@ workflow run {
   }
 }
 ```
+
+## Using `else` and `else if`
+
+When you need to execute one branch or another based on a condition, use `else`.
+For multiple conditions, chain `else if` clauses together.
+
+```wdl
+# ... task definitions ...
+
+workflow run {
+  input {
+    String mode
+  }
+
+  if (mode == "fast") {
+    call fast_analysis {}
+  } else if (mode == "thorough") {
+    call thorough_analysis {}
+  } else {
+    call standard_analysis {}
+  }
+}
+```

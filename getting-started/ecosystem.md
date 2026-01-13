@@ -131,7 +131,7 @@ The following list contains the known execution engines listed alphabetically.
       </a>
       <br />
     Binary/Executable <br />
-    <i>Supports WDL v1.2</i>
+    <i>Supports WDL v1.3</i>
     </td>
     <td>
     <center>

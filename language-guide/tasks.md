@@ -177,19 +177,19 @@ and the use of `env` input variables ([spec link][spec-env-variables]). These ar
 reserved for more niche use-cases, but users may refer to the spec to learn how to use
 them when the need arises.
 
-[spec-tasks]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#task-definition
-[spec-task-inputs]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#task-inputs
-[spec-task-outputs]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#task-outputs
+[spec-tasks]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#task-definition
+[spec-task-inputs]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#task-inputs
+[spec-task-outputs]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#task-outputs
 [spec-requirements]:
-    https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#-requirements-section
-[spec-requirements-attributes]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#requirements-attributes
+    https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#-requirements-section
+[spec-requirements-attributes]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#requirements-attributes
 [container-explanation]:
     https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-a-container/
-[spec-meta]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#meta-values
+[spec-meta]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#meta-values
 [spec-parameter-meta]:
-    https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#parameter-metadata-section
-[spec-hints]: https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#-hints-section
+    https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#parameter-metadata-section
+[spec-hints]: https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#-hints-section
 [spec-env-variables]:
-    https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#environment-variables
+    https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#environment-variables
 [spec-declarations]:
-    https://github.com/openwdl/wdl/blob/wdl-1.2/SPEC.md#private-declarations
+    https://github.com/openwdl/wdl/blob/wdl-1.3/SPEC.md#private-declarations
