@@ -224,13 +224,14 @@ the category.
 
 | Name              | Category                 | Description                                               |
 | :---------------- | :----------------------- | :-------------------------------------------------------- |
-| [wdl-tests]       | Conformance testing      | Conformance tests for WDL execution engines.              |
+| [wdl-tests]       | Conformance testing      | Conformance tests for WDL execution engines.(**Deprecated**)|
 | [wdl-aid]         | Documentation generation | _"Automatic input generation for WDL worflows."_          |
 | [pytest-workflow] | Testing                  | Testing framework for workflow languages (including WDL). |
 | [wdl-atlas]       | Documentation generation | Generate interactive HTML and workflow diagrams.          |
 | [wdldoc]          | Documentation generation | _"Create WDL documentation using Markdown."_              |
 | [wdl-packager]    | Package management       | _"Package a WDL and imports into a zip file."_            |
 | [pytest-wdl]      | Testing                  | _"WDL plugin for pytest."_                                |
+| [spectool]        | Conformance testing      | _"A conformance testing tool for WDL."_                   |
 
 ## Community Workflows
 
@@ -261,6 +262,7 @@ The following is an incomplete list of large WDL workflow repositories sorted by
 [polymode]: https://github.com/polymode/polymode
 [pytest-wdl]: https://github.com/EliLillyCo/pytest-wdl
 [pytest-workflow]: https://github.com/LUMC/pytest-workflow
+[spectool]: https://github.com/openwdl/spectool
 [sprocket-vscode]:
     https://marketplace.visualstudio.com/items?itemName=stjude-rust-labs.sprocket-vscode
 [sprocket]: https://github.com/stjude-rust-labs/sprocket
