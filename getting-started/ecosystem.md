@@ -68,7 +68,7 @@ The following list contains the known execution engines listed alphabetically.
     </td>
     <td>
       <input type="checkbox" checked disabled> Amazon AWS <br />
-      <input type="checkbox" checked disabled> Microsoft Azure <br />
+      <input type="checkbox" disabled> Microsoft Azure <br />
       <input type="checkbox" checked disabled> Google Cloud
     </td>
   </tr>
@@ -171,7 +171,7 @@ The following list contains the known execution engines listed alphabetically.
     </td>
     <td>
       <input type="checkbox" disabled> Amazon AWS <br />
-      <input type="checkbox" checked disabled> Microsoft Azure <br />
+      <input type="checkbox" disabled> Microsoft Azure <br />
       <input type="checkbox" checked disabled> Google Cloud
     </td>
   </tr>
