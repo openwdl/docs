@@ -213,6 +213,7 @@ Extensions and other IDE support tools listed sorted by the editor.
 | [poly-wdl]                              | Emacs              | Integration with [polymode].                                                       |
 | [Winstanly WDL]                         | JetBrains          | Linting and syntax highlighting.                                                   |
 | [wdl-sublime]                           | Sublime Text       | Syntax                                                               highlighting. |
+| [sprocket.nvim]                         | Neovim             | Formatting, linting, snippets, syntax highlighting, and validation.                |
 | [wdl-vim]                               | Vim                | Syntax highlighting.                                                               |
 | [Sprocket][sprocket-vscode] (extension) | Visual Studio Code | Formatting, linting, snippets, syntax highlighting, and validation.                |
 | [Syntax Highlighter]                    | Visual Studio Code | Syntax highlighting.                                                               |
@@ -265,6 +266,7 @@ The following is an incomplete list of large WDL workflow repositories sorted by
 [spectool]: https://github.com/openwdl/spectool
 [sprocket-vscode]:
     https://marketplace.visualstudio.com/items?itemName=stjude-rust-labs.sprocket-vscode
+[sprocket.nvim]: https://github.com/stjude-rust-labs/sprocket.nvim
 [sprocket]: https://github.com/stjude-rust-labs/sprocket
 [St. Jude Cloud]: https://github.com/stjudecloud/workflows
 [Syntax Highlighter]:
