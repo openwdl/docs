@@ -81,6 +81,7 @@ export default defineConfig({
         text: "Getting Started",
         items: [
           { text: "Quickstart", link: "/getting-started/quickstart" },
+          { text: "Best Practices", link: "/getting-started/best-practices" },
           { text: "Ecosystem", link: "/getting-started/ecosystem" },
           { text: "Getting help", link: "/getting-started/getting-help" },
           { text: "Contributing", link: "/getting-started/contributing" },

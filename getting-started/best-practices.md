@@ -1,0 +1,45 @@
+# WDL Best Practices
+
+This guide is includes best practices that should be followed while authoring WDL, regardless of WDL version or backend or engine.
+
+## Shell Safety
+
+- All tasks with multiple commands (including any pipes (`|`)) should have `set -euo pipefail` before any other commands.
+  - Tasks without multiple commands or pipes can omit this.
+  - These options will cause common classes of bugs in Bash scripts to fail immediately and loudly, instead of causing silent or subtle bugs in your task behavior.
+
+## Resource Management
+
+- If the _contents_ of a `File` are not read or do not need to be localized for a task, try to coerce the `File` variable to a `Boolean` (with `defined()`) or a `String` (with `basename()`) to avoid unnecessary disk space usage and networking.
+- Most tasks should have a default `maxRetries` of 1.
+  - This is because many WDL backends are prone to intermittent failures that can be recovered from with a retry.
+  - Certain tasks are especially prone to intermittent failure (often if any networking is involved) and can have a higher default `maxRetries`.
+  - Certain tasks with potentially high compute costs in cloud environments may default to `0`. This should be used in combination with call caching to aid rerunning while minimizing costs.
+- Tasks should have easily configurable memory and disk space allocations.
+  - Often, tasks have a dynamic calculation for resource requirements based on input sizes. Users of a WDL should have an easy way to fine tune this calculation.
+  - This may mean incorporating an `Int` or `Float` in the inputs of the task that is applied to the dynamic calculation.
+- For WDL 1.3 and later, WDL authors can change resource requirements between retry attempts. This enables mitigation of errors relating to resources limits, but users may inadvertently disable these mitigations by introducing runtime overrides.
+  - WDL authors should expose resource fine tuning via the input section and incorporate those user values in any dynamic calculations as an alternative to overriding the requirements with static values.
+- Check all assumptions made about workflow inputs before beginning long running or expensive executions.
+  - Common examples of assumptions that should be checked:
+    - mutually exclusive parameters
+    - missing optional file for selected parameters
+    - filename extensions
+    - valid `String` choice
+      - For WDL 1.3 and later, an `enum` should be used in place of `String`s with a fixed set of valid options
+  - Use `after` clauses in workflows to ensure that all these assumptions are valid before beginning tasks with heavy computation.
+
+## Reproducibility
+
+- All tasks should run in a persistently versioned container.
+  - e.g. do not use `latest` tags for Docker images.
+  - This helps ensure reproducibility across time and environments.
+
+## File Management
+
+- Tasks which assume a file and any accessory files (e.g. a BAM and a BAI) have specific extensions and/or are in the same directory should *always* create symlinks from the mounted inputs to the work directory of the task
+  - This is because individual `File` types are not guaranteed to be in the same mounted directory.
+  - The `command` may include something like: `ln -s "~{<input name>}" "./<expected name>"`
+- Tasks should `rm` any temporary or intermediate files created in the work directory (including symlinks).
+  - This helps reduce disk bloat from keeping unnecessary files around.
+  - This is especially important for any large or uncompressed files, such as reference FASTAs or databases.
